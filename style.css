@@ -6,7 +6,7 @@ body {
   }
   
   .container {
-    max-width: 800px;
+    max-width: 70%;
     margin: auto;
     background: white;
     padding: 20px;
@@ -100,17 +100,23 @@ body {
   
   .formation-date {
     font-weight: bold;
+    font-size: 1.3em;
     color: #737373;
     margin-bottom: 5px;
   }
   
   .formation-title {
-    font-size: 1.3em;
+    font-size: 1.9em;
     font-weight: bold;
     margin: 5px 0;
     color: #50648b;
   }
   
+  .formation-location {
+    font-size: 1.9em;
+    color: #50648b;
+  }
+
   .formation-detail {
     font-weight: bold;
     margin: 5px 0;
@@ -123,7 +129,7 @@ body {
   }
   
   .formation-image img {
-    width: 160px;
+    width: 300px;
     height: auto;
     object-fit: contain;
   }
@@ -134,10 +140,6 @@ body {
     flex-wrap: wrap;
   }
 
-  .formation-location {
-    font-size: 1.3em;
-    color: #50648b;
-  }
   
   .project {
     display: block;
