@@ -175,4 +175,53 @@ body {
     margin-bottom: 10px;
     color: #333;
   }
+
+  .marquee-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+
+    padding: 20px 0;
+  }
   
+  .marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marqueeScroll 50s linear infinite;
+  }
+  
+  .marquee-content {
+    display: flex;
+    gap: 50px;
+    padding-right: 50px;
+  }
+  
+  .skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    min-width: 80px;
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  
+  .skill-item img {
+    height: 40px;
+    width: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-item img:hover {
+    transform: scale(1.1);
+  }
+  
+  @keyframes marqueeScroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
