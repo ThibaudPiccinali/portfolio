@@ -154,14 +154,14 @@ body {
   }
   
   .media img{
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     border-radius: 8px;
     object-fit: cover;
   }
   
   .media iframe {
-    width: 100%;
+    width: 50%;
     aspect-ratio: 16 / 9;
     border-radius: 8px;
     object-fit: cover;
