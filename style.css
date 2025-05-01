@@ -28,6 +28,12 @@ body {
     margin-bottom: 15px;
   }
   
+  .profile-img:hover {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 0px 16px 0 #323b4c;
+  }  
+
   h1 {
     color: #323b4c;
     margin: 0;
