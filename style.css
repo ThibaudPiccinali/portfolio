@@ -154,8 +154,7 @@ body {
   }
   
   .media img{
-    width: 50%;
-    height: 50%;
+    max-height: 250px;
     border-radius: 8px;
     object-fit: cover;
   }
