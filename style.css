@@ -20,8 +20,10 @@ body {
   }
   
   .profile-img {
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 300px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #323b4c;
@@ -37,13 +39,14 @@ body {
   h1 {
     color: #323b4c;
     margin: 0;
-    font-size: 2.5em;
+    font-size: 3em;
   }
   
   h2 {
     color: #323b4c;
     border-bottom: 2px solid #eee;
     padding-bottom: 5px;
+    font-size: 2em;
   }
   
   section {
@@ -96,7 +99,7 @@ body {
   .formation-content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
   }
   
@@ -124,6 +127,7 @@ body {
   }
 
   .formation-detail {
+    font-size: 1.7em;
     font-weight: bold;
     margin: 5px 0;
     color: #323b4c;
@@ -135,9 +139,10 @@ body {
   }
   
   .formation-image img {
-    width: 300px;
-    height: auto;
-    object-fit: contain;
+    max-width: 250px;
+    border-radius: 8px;
+    object-fit: cover;
+    vertical-align: baseline;
   }
 
   .formation-title-row {
@@ -146,6 +151,72 @@ body {
     flex-wrap: wrap;
   }
 
+
+  .experience_pro {
+    margin: 30px 0;
+    padding: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #323b4c;
+    border-radius: 10px;
+  }
+  
+  .experience_pro-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .experience_pro-text {
+    flex: 1;
+  }
+  
+  .experience_pro-date {
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #737373;
+    margin-bottom: 5px;
+  }
+  
+  .experience_pro-title {
+    font-size: 1.9em;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #50648b;
+  }
+  
+  .experience_pro-location {
+    font-size: 1.9em;
+    color: #50648b;
+  }
+
+  .experience_pro-detail {
+    font-size: 1.7em;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #323b4c;
+  }
+  
+  .experience_pro-description {
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .experience_pro-image img {
+    max-width: 200px;
+    max-height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+    vertical-align: baseline;
+  }
+
+  .experience_pro-title-row {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
   
   .project {
     display: block;
