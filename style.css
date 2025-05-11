@@ -54,12 +54,15 @@ body {
   }
   
   .button {
+    cursor: pointer;
     display: inline-flex;
+    position: relative;
     align-items: center;
     gap: 8px;
     text-decoration: none;
     color: white;
     padding: 8px 15px;
+    font-size: 25px;
     border-radius: 6px;
     font-weight: bold;
     transition: background-color 0.3s;  
@@ -81,9 +84,9 @@ body {
     background-color: #1f2738;
   }
 
-  .icon {
-    width: 20px;
-    height: 20px;
+  .button-container {
+    display: block;
+    margin-bottom: 10px;
   }
 
   .formation {
@@ -344,4 +347,53 @@ body {
 
   details[open] summary::after {
     transform: rotate(180deg);
+  }
+
+  .tooltip {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 4px 8px;
+    position: absolute;
+    z-index: 1;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    font-size: 0.8em;
+    white-space: nowrap;
+  }
+  
+  .tooltip.show {
+    visibility: visible;
+    opacity: 1;
+  }
+
+
+  .langue-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+  }
+
+  .lang-container p {
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+
+  .langue {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+  .circle {
+    margin: 20px;
+    width: 200px;
+    height: 200px; 
   }
