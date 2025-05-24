@@ -92,6 +92,50 @@ section {
   margin-bottom: 0.625rem;
 }
 
+.languages {
+  max-width: 90%;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #f3f3f3;
+  border-radius: 0.75rem;
+  border-left: 0.3125rem solid #50648b;
+}
+
+.language-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.language-card {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  gap: 1rem;
+}
+
+.language-card img {
+  width: 60px;
+  height: auto;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #000000;
+}
+
+.language-text h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #323b4c;
+}
+
+.language-text p {
+  margin: 0.25rem 0 0;
+  color: #555;
+}
+
 .formation,
 .experience_pro {
   margin: 1.875rem 0;
@@ -363,5 +407,9 @@ section {
 
   .marquee-track {
     animation: marqueeScroll 30s linear infinite;
+  }
+  
+  .language-grid {
+    grid-template-columns: 1fr;
   }
 }
