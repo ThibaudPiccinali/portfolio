@@ -95,7 +95,7 @@ section {
 .formation,
 .experience_pro {
   margin: 1.875rem 0;
-  padding: 1.25rem 1.25rem 0.3125rem;
+  padding: 0.1rem 1.25rem 0.3125rem;
   background-color: #f9f9f9;
   border-left: 0.3125rem solid #323b4c;
   border-radius: 0.625rem;
@@ -158,7 +158,7 @@ section {
   text-align: center;
   background-color: #e4e4e4;
   border-left: 0.3125rem solid #50648b;
-  padding: 1.25rem 1.25rem 0.3125rem;
+  padding: 0.1rem 1.25rem 0.3125rem;
   border-radius: 0.625rem;
   margin: 1.25rem auto; /* centré horizontalement */
   width: 100%;
@@ -174,7 +174,6 @@ section {
 
 .media img {
   width: 60%;
-  height: auto;
   border-radius: 0.5rem;
   object-fit: contain;
 }
@@ -188,7 +187,7 @@ section {
 
 .project-title {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   margin-bottom: 0.625rem;
   color: #323b4c;
 }
@@ -197,51 +196,6 @@ section {
   margin-bottom: 0.625rem;
   color: #333;
 }
-
-@media (max-width: 768px) {
-  .container {
-    padding: 1rem;
-    max-width: 90%;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  .button {
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-  }
-
-  .formation-title,
-  .experience_pro-title,
-  .formation-location,
-  .experience_pro-location {
-    font-size: 1.2rem;
-  }
-
-  .formation-detail,
-  .experience_pro-detail {
-    font-size: 1rem;
-  }
-
-  .formation-content,
-  .experience_pro-content {
-    flex-direction: column;
-  }
-
-  .media iframe {
-    width: 100%;
-  }
-  .media img {
-  width: 100%;
-}
-}
-
 
   .marquee-container {
     width: 100%;
@@ -352,28 +306,62 @@ section {
     opacity: 1;
   }
 
-
-  .langue-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
+  @media (max-width: 768px) {
+  .container {
+    padding: 0.3rem;
+    max-width: 100%;
   }
 
-  .lang-container p {
-    margin: 10px 0;
-    font-size: 1.2em;
+  h1 {
+    font-size: 2rem;
   }
 
-  .langue {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-
-  .circle {
-    margin: 20px;
-    width: 200px;
-    height: 200px; 
+  h2 {
+    font-size: 1.5rem;
   }
+
+  .button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  .formation,
+  .experience_pro {
+  margin: 0.5rem 0;
+  padding: 0rem 0.5rem 0rem;
+  background-color: #f9f9f9;
+  border-left: 0.2rem solid #323b4c;
+  border-radius: 0.625rem;
+  }
+
+  .formation-title,
+  .experience_pro-title,
+  .formation-location,
+  .experience_pro-location {
+    font-size: 1.2rem;
+  }
+
+  .formation-detail,
+  .experience_pro-detail {
+    font-size: 1rem;
+  }
+
+  .formation-content,
+  .experience_pro-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-title {
+  font-size: 1.1rem;
+  }
+  .media iframe {
+    width: 100%;
+  }
+  .media img {
+  width: 100%;
+  }
+
+  .marquee-track {
+    animation: marqueeScroll 30s linear infinite;
+  }
+}
