@@ -426,10 +426,6 @@ footer {
   .media img {
   width: 100%;
   }
-
-  .marquee-track {
-    animation: marqueeScroll 30s linear infinite;
-  }
   
   .language-grid {
     grid-template-columns: 1fr;

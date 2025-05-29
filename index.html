@@ -14,8 +14,8 @@
     <header>
       <img src="images/photo_cv.png" alt="Photo de profil" class="profile-img"/>
       <h1>Thibaud Piccinali</h1>
-      <p>Etudiant en troisième année d’école d’<b>ingénieur généraliste à l’Ecole Centrale de Lille</b> (équivalent Bac+5). 
-        Je suis fasciné par le monde de <b>l’informatique</b> et de la <b>programmation</b> tout particulièrement dans un contexte <b>d’application concrète</b> comme celui des <b>systèmes embarqués</b>.  
+      <p>Etudiant en troisième année d’école d’<b>ingénieur généraliste à l’Ecole Centrale de Lille</b> (équivalent Bac+5).<br>
+        Je suis fasciné par le monde de <b>l’informatique</b> et de la <b>programmation</b> tout particulièrement dans un contexte <b>d’application concrète</b> comme celui des <b>systèmes embarqués</b>.<br>
         Actuellement en stage de fin d’étude, je suis à la recherche de mon premier emploi à partir d'<b>Octobre 2025</b>.</p>
       
       <div class="button-container">
@@ -255,7 +255,13 @@
           <summary>Détails</summary>
 
           <p class="experience_pro-description">
-            TODO
+            Intégré à l'équipe <i>Terre & Hydrologie</i> du département R&D, j'ai pu participer au développement de solutions permettant l'<b>analyse de la Terre</b> à l'aide d'<b>images satellite (télédétection)</b>.<br>
+            Plus particulièrement, l'objectif du stage était d'étudier les <b>Foundation Models</b> pour déterminer s'ils pouvaient être utilisés pour faire de la <b>détection de changement</b>.<br><br>
+
+            Ce stage a commencé par une réalisation d'un <b>état de l'art complet</b> de ces technologies appliquées à ce domaine. Des <b>études et comparaisons</b> ont été effectuées pour déterminer quels modèles étaient les plus prometteurs.
+            Ensuite, nous avons décidé d'<b>intégrer ces modèles ainsi que la détection de changement</b> dans un <b>framework reconnu par la communauté</b> de télédétection (<i>Terratorch</i>). 
+            Ce framework permet une <b>utilisation</b> (entrainement, inférences) des <b>modèles simplifiée</b> (notamment à l'aide de fichiers de configuration). 
+
           </p>
         </details>
       </div>
@@ -277,7 +283,16 @@
           <summary>Détails</summary>
 
           <p class="experience_pro-description">
-            TODO
+            Intégré à l'équipe <i>CXSC</i> (équipe spécialisé dans l'expérience utilisateur) du département R&D, j'ai pu participer au développement de <b>solutions innovantes</b> proposant de <b>nouvelles manières d'effectuer des paiements</b>.
+            Particulièrement, l'équipe s'intéressait à l'utilisation des <b>Large Language Models (LLM)</b> pour des <b>paiements autonomes</b>.<br><br>
+
+            Au cours de ce stage, j'ai participé au <b>développement d'une application pour smartphone</b> intégrant ces technologies. 
+            Nous avons développé un programme écoutant des entrées d'un smartphone et analysant ces dernières à l'aide de LLM.
+            L'idée était de <b>déterminer si l'utilisateur était susceptible d'effectuer un voyage</b> dans les prochains jours.
+            Si le programme jugeait que l'utilisateur allait très probablement voyager, alors il se chargeait d'effectuer une <b>recherche personnalisée d'itinéraire</b>. Cette personnalisation s'effectuait également à l'aide de LLM et des données de l'utilisateur.
+            Enfin, un <b>module défensif</b> (utilisant également des LLM) permettait de légitimer cette transaction.<br><br> 
+
+            Ce stage a été l'occasion de produire un <b>prototype fonctionnel</b> qui fut présenté en interne auprès d'<b>équipes internationales</b>. 
           </p>
         </details>
       </div>
@@ -361,7 +376,10 @@
           <p class="project-title">Commande d'une flotte de robots gérant la logistique d'un entrepôt</p>
           <div class="project-content">
             <p class="project-description">
-              TODO
+               Ce projet, <b>réalisé en groupe de 3 étudiants</b>, consiste à la conception d'un système capable de <b>commander une flotte de robots dans un entrepôt</b>. 
+               Avec une interface sur un terminal, <b>un utilisateur peut sélectionner des articles</b>. <b>Un robot mobile se charge ensuite de récupérer ces articles dans l'entrepôt et de les amener dans un bac de collecte.</b>
+               Ce travail s'intéresse aux problématiques suivantes : <b>asservissement de la position de robots, trajectoire évitant les collisions, affectation continue des commandes, gestionnaire d'inventaire</b>...
+               Ce projet se concentre sur la <b>modélisation du système, la conception et l'intégration des principales briques techniques</b>.
             </p>
             <div class="button-container">
               <a class="button button-blue" href="https://github.com/Zakurama/projet_entrepot" target="_blank">
@@ -378,7 +396,9 @@
         </div>
         <div class="project-content">
           <p class="project-description">
-            TODO
+            Ce projet, <b>réalisé en groupe de 5 étudiants</b>, consiste à la réalisation d'une <b>station météo</b> qui collecte des données et les rend <b>consultables via une interface web</b>.
+            Pour ce projet, les consignes nous imposaient de travailler avec un certain type de matériel, ce qui nous a conduit à la <b>conception et la fabrication de notre propre PCB</b>. Un <b>boîtier</b> intégrant l'ensemble des éléments a également été conçu puis fabriqué à l'aide des <b>imprimantes 3D (PLA et résine)</b> de l'école.
+
           </p>
           <div class="button-container">
             <a class="button button-blue" href="https://github.com/Zakurama/station_meteo/tree/projet_commun" target="_blank">
@@ -395,7 +415,9 @@
       </div>
       <div class="project-content">
         <p class="project-description">
-          TODO
+          Ce projet, <b>réalisé en groupe de 13 étudiants et sur une durée d'un an et demi</b>, consiste à la conception et réalisation d'une <b>montre connectée</b>. 
+          A l'aide d'un actionneur développé par notre partenaire (le laboratoire <i>IEMN</i>) qui permet d'offrir des <b>sensations de vibrations innovantes</b>, cette montre permet d'être <b>informé de la réception d'une notification</b> sur son smartphone.
+          Le projet comprend la <b>réalisation mécanique</b> (boîtier et bracelet), la <b>réalisation électronique</b> (carte et composants) ainsi que le développement d'une <b>application Android</b> permettant la configuration de la montre.
         </p>
         <div class="button-container">
           <a class="button button-blue" download href="documents/Orion_Rapport_Projet.pdf" target="_blank">
@@ -416,7 +438,8 @@
     </div>
     <div class="project-content">
       <p class="project-description">
-        TODO
+         Ce projet, <b>réalisé en groupe de 7 étudiants</b>, consiste à la conception et fabrication d'un <b>halfbike</b> (mixte entre vélo, trottinette et skateboard).
+         L'halbike a d'abord été modélisé à l'aide d'<b>outil de CAO (Onshape)</b>, ses pièces ont ensuite été produites (<b>découpe jet d'eau, plieuse</b>) puis assemblées (<b>soudage MAG</b>).
       </p>
     </div>
 </div>
@@ -453,7 +476,7 @@
             </div>
             <div class="project-content">
               <p class="project-description">
-                Ce projet consiste en une étude permettant de déterminer la performance d'algorithmes d'intelligence artificielle (particulièrement d'algorithmes d'<b>Object Detection</b>) pour estimer <b>la position du point focal</b> dans un tableau. Ce projet représente l'un de mes premiers travaux utilisant l'intelligence artificielle.
+                Ce projet, <b>réalisé en autonomie</b>, consiste en une étude permettant de déterminer la performance d'algorithmes d'intelligence artificielle (particulièrement d'algorithmes d'<b>Object Detection</b>) pour estimer <b>la position du point focal</b> dans un tableau. Ce projet représente l'un de mes premiers travaux utilisant l'intelligence artificielle.
               </p>
               <div class="button-container">
                 <a class="button button-blue" download href="documents/Report_Analyse_Art_AI.pdf" target="_blank">
